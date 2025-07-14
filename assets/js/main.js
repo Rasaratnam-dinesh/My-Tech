@@ -256,3 +256,7 @@
   });
 
 })()
+
+function makePhoneCall() {
+  window.location.href = "+33 6 95 14 51 86"; // replace with your actual phone number
+}

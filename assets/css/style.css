@@ -1832,64 +1832,61 @@ section {
 /* Dinesh */
 
     /*Whats app icon */
-    .whatsapp-icon {
-      position: fixed; /* Use fixed positioning */
-      bottom: 20px; /* Distance from the bottom */
-      left: 20px; /* Distance from the left */
-      cursor: pointer; /* Change cursor to pointer */
-      background-color: #25D366; /* Green background color */
-      border-radius: 50%; /* Make the background circular */
-      padding: 10px; /* Space around the SVG */
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
-      z-index: 1000; /* Ensure the icon is on top of other elements */
-      animation: zoom 0.5s infinite alternate; /* Default animation when not hovered */
+    /* .whatsapp-icon {
+      position: fixed; 
+      bottom: 20px; 
+      left: 20px; 
+      cursor: pointer; 
+      background-color: #25D366; 
+      border-radius: 50%;
+      padding: 10px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+      z-index: 1000; 
+      animation: zoom 0.5s infinite alternate; 
     }
     
     .e-font-icon-svg {
-      width: 40px; /* Adjust the size as needed */
-      height: 40px; /* Adjust the size as needed */
-      fill: white; /* White color for the SVG lines */
+      width: 40px; 
+      height: 40px; 
+      fill: white;
     }
     
     .whatsapp-icon:hover {
-      animation: zoom 0.5s infinite alternate; /* Apply animation on hover */
+      animation: zoom 0.5s infinite alternate; 
     }
     
-    /* Keyframes for zoom in and out */
+    
     @keyframes zoom {
       0% {
-        transform: scale(1); /* Normal size */
+        transform: scale(1);
       }
       100% {
-        transform: scale(1.1); /* Scaled up */
+        transform: scale(1.1);
       }
-    }
+    } */
 
     /* Call icon (styled like WhatsApp button) */
   .call-icon {
     position: fixed;
-    bottom: 20px; /* adjust as needed */
+    bottom: 20px;
     left: 20px;
-    cursor: pointer;
-    background-color: #0d6efd; /* Bootstrap primary blue */
-    width: 60px; /* Equal width and height for perfect circle */
+    width: 60px;
     height: 60px;
-    border-radius: 50%; /* Makes it a circle */
+    background-color: #25D366; /* WhatsApp green or your desired color */
+    color: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 28px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    z-index: 10000; /* Make sure it appears above nav/header */
+    text-decoration: none;
     animation: zoom 0.5s infinite alternate;
-  }
-
-  .call-icon i {
-    font-size: 24px;
-    color: white;
   }
 
   .call-icon:hover {
-    animation: zoom 0.5s infinite alternate;
+    animation: zoom 0.5s infinite alternate; 
   }
 
   @keyframes zoom {

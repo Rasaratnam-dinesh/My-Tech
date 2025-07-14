@@ -1900,7 +1900,6 @@ section {
 
   /* Call button */
 .call-button {
-  margin-left: 15px;
   padding: 8px 16px;
   border-radius: 30px;
   font-weight: 600;
@@ -1910,12 +1909,25 @@ section {
   user-select: none;
   transition: background-color 0.3s ease;
 
-  display: inline-flex;         /* Use flexbox */
-  justify-content: center;      /* Center horizontally */
-  align-items: center;          /* Center vertically */
-  gap: 8px;                     /* Space between icon and text */
-  min-width: 100px;             /* Optional: consistent width */
+  display: inline-flex; /* important to allow width to shrink */
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  text-align: center;
 }
+
+.call-button.btn {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+
+
 
 
 
